@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+double a,b,c,k,disc,x1,x2;
+printf("roots of ax2+bx+c=0\n");
+printf("enter values for a,b,c :\n");
+scanf("%lf %lf %lf",&a,&b,&c);
+if(a==0.0 && b==0.0)  
+ printf("degenerate equation\n");
+else if(a==0.0)
+ printf("x=%lf\n",(-c)/b);
+else {
+ disc=b*b-(4*a*c);
+ if(disc>0.0)
+ {
+  k=sqrt(disc);
+  x1=(-b+k)/(2*a);
+  x2=(-b-k)/(2*a);
+  printf("2 different roots has calculated in the equation\n");
+  printf("x1=%lf , x2=%lf\n",x1,x2);
+ }
+ else if (disc<0.0)
+  printf("discriminant<0, x1 and x2 values are complex numbers\n");
+ else
+ printf("roots are equal --> x1=x2=%lf\n",(-b)/(2*a));
+ }
+return 0;

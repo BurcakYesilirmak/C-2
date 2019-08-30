@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+int i,k[10];
+for(i=0;i<10;i++) {
+ k[i]=i+1;
+ printf("k[%d]=%d\n",i,k[i]);
+ }
+return 0;
+}

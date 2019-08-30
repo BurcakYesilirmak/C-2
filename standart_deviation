@@ -1,0 +1,23 @@
+/*10 tane sayının ortalamasını ve standart sapmasını hesaplamak*/
+/*burada 2. for'dan sonra elemanları klavyeden tekrar almadık*/
+/*aynı dizi elemanları nasıl hala geçerli?*/
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+int i;
+double k[10],sum=0.0,ave,st_deviation;
+for(i=0;i<10;i++) {
+ printf("enter %dth value: ",i+1);
+ scanf("%lf",&k[i]);
+ sum+=k[i];
+ }
+ave=sum/10;
+for(sum=0.0,i=0;i<10;i++) {
+ sum+=pow(k[i]-ave,2.0);
+ st_deviation=sqrt(sum/9);
+ }
+printf("average of the numbers:%lf\n",ave);
+printf("standart deviation:%lf\n",st_deviation);
+return 0;
+}

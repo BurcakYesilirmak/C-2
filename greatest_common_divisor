@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+int z,t,k;
+printf("Enter 2 non-negative integer:\n");
+scanf("%d%d",&z,&t);
+while (t!=0) {
+ k=z%t;
+ z=t;
+ t=k;
+}
+printf("the greatest common divisor is %d\n",z);
+return 0;
+}

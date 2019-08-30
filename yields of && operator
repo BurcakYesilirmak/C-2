@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+int i,k;
+for(i=0;i<=6;i+=2) {
+ k=(i%2==0)&&(i%3==0);
+ printf("&& operator yields:%d\n",k);
+}
+return 0;
+}

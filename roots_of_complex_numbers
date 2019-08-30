@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+float a,b,c,r,im,disct,k,x1,x2;
+printf("roots of ax2+bx+c :\n");
+printf("enter a,b,c values:\n");
+scanf("%f %f %f",&a,&b,&c);
+disct=(b*b)-(4.0*a*c);
+if(disct>0.0) {
+ k=sqrt(disct);
+ x1=(-b+k)/(2.0*a);
+ x2=(-b+k)/(2.0*a);
+ printf("x1=%.2f\n x2=%.2f\n",x1,x2);
+ }
+else if(disct<0.0) {
+ r=(b*0.5)/a;
+ im=(sqrt(-disct)/2.0*a);
+ printf("x1=%.1f+(%.3f)i\n",r,im);
+ printf("x1=%.1f-(%.3f)i\n",r,im);
+ }
+else {
+ r=(b*0.5)/a;
+ printf("x1=x2=%.2f\n",r);
+}
+return 0;
+}

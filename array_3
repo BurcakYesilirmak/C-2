@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+int i,k[10],*pk;
+for(i=0;i<10;i++) 
+ k[i]=i+1;
+pk=k;
+printf("the start adress of the array:%p\n",pk);
+printf("value of the first element:%d\n",*pk);
+pk=&k[0];
+printf("the adress of the first element:%p\n",pk);
+printf("value of the first element:%d\n",*pk);
+ 
+return 0;
+}
+ 

@@ -1,0 +1,14 @@
+/* *px ve x, x'in içeriğini;*/
+/* px ve &x x'in adresini gösterir*/
+#include<stdio.h>
+int main()
+{
+int *px,x=55;
+px=&x;
+printf("&x=%p\n",&x);
+printf("px=%p\n",px);
+printf(" *px=%d and x=%d\n",*px,x);
+*px=98;
+printf(" *px=%d and x=%d\n",*px,x);
+return 0;
+}

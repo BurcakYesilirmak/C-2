@@ -6,7 +6,7 @@ for(i=1;i<=3;i++) { //outer loop
  printf("the start of the iteration %d of the outer loop\n",i);
  for(j=1;j<=4;j++) //inner loop
   printf("iteration %d of the inner loop\n",j);
- printf("te end of iteration %d of the outer loop\n",i);
+ printf("the end of iteration %d of the outer loop\n",i);
 }
 return 0;
 }

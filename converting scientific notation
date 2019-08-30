@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+double x;
+double y;
+x=146e5;
+y=3847.64e-3;
+printf("x is:%e and y is:%e",x,y);
+return 0;
+}

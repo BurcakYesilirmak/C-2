@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+double x,y,z;
+x=65.0;
+y=2.0;
+z=13.0;
+printf("x=65,y=2 -> pow(65,2)=%4.0f\n",pow(x,y));
+printf("z=13 -> sqrt(13)=%2.5f\n",sqrt(z));
+printf("y=2 -> sqrt(2)=%2.6f\n",sqrt(y));
+return 0;
+}

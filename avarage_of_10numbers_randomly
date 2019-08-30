@@ -1,0 +1,15 @@
+/*klavyeden rastgele girilen 10 sayının ortalaması*/
+#include<stdio.h>
+int main()
+{ 
+int i;
+float x[10],ort,toplam=0.0;
+for(i=0;i<10;i++) {
+ printf("%d.sayi: ",i+1);
+ scanf("%f",&x[i]);
+ toplam += x[i];
+ }
+ort=(toplam/10);
+printf("girilen 10 sayinin ortalamasi:%f\n",ort);
+return 0;
+}

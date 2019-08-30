@@ -1,0 +1,14 @@
+//table of the n th number 
+//2d for editing align
+#include<stdio.h>
+int main()
+{
+int i,n=0;
+printf("n       sum from 1 to n\n");
+printf("---     ---------------\n");
+for(i=1;i<=10;i++) {
+ n+=i;
+ printf("%2d              %d   \n",i,n);
+ }
+return 0;
+}
